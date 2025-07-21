@@ -1,1 +1,0 @@
-# 75 Days Hard Challenge 

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+:root {
+    --delay: .5s;
+    --time: 1s;
+}
+
+.lobster {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.hero-section h1 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-anime var(--time) forwards var(--delay);
+    animation-delay: calc(var(--delay));
+}
+
+.hero-section p {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-anime var(--time) forwards var(--delay);
+    animation-delay: calc(var(--delay) + var(--delay));
+}
+
+.hero-section .cta {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-anime var(--time) forwards var(--delay);
+    animation-delay: calc(var(--delay) + var(--delay) + var(--delay));
+}
+
+@keyframes fade-anime {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
