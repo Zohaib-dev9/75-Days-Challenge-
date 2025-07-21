@@ -1,0 +1,24 @@
+/* CTA */
+
+.signup-btn {
+    animation: anime-pulse infinite ease-in-out 2s;
+}
+
+.signup-btn:hover {
+    animation: none;
+}
+
+.signup-btn:focus {
+    animation: none;
+    scale: 1.05;
+}
+
+@keyframes anime-pulse {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
